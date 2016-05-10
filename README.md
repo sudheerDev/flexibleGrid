@@ -1,18 +1,6 @@
-# flexibleGrid
+## XGrid
 
-This is an experimental responsive grid solution written by me about a year ago.
-Repo needs to be updated.
+Scalable grid.
+Source provides sass mixins to generate grids classes for different breakpoints.
 
-
-TODO:
- * Cross check
-   * Mixins.
-   * Functions.
-   * Variables
-   * API.
- * Write documentation.
- * Cleanup some uncessary code
-   * Simplify mixins.
-   * check- classnames in mixins for clear, hide etc?? 
- * Style linting.
- * Contribution guidelines.
+Using XGrid
