@@ -1,5 +1,7 @@
 {
   "private": true,
+  "title": "flexibleGrid",
+  "name": "flexible-grid",
   "engines": {
     "node": ">=0.12.0"
   },

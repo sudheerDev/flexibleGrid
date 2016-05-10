@@ -26,33 +26,20 @@ $screen-list: (
       'columns': 12,
       'grid-classes': $default-grid-list,
       'helper-classes': $helper-classes,
-      'gutter': 10px ),
+      'gutter': 10px
+    ),
   'medium': (
       'range': 40.063em 64em,
       'columns': 12,
       'grid-classes': $default-grid-list,
-      'helper-classes': $helper-classes ),
+      'helper-classes': $helper-classes
+    ),
   'large': (
       'range': 64.063em 90em,
       'columns': 12,
       'grid-classes': $default-grid-list,
-      'helper-classes': $helper-classes ),
-  'xlarge': (
-      'range': 90.063em 120em,
-      'columns': 12,
-      'grid-classes': $default-grid-list,
-      'helper-classes': $helper-classes ),
-  'xxlarge': (
-      'range': 120.063em 160em,
-      'columns': 12,
-      'grid-classes': $default-grid-list,
-      'helper-classes': $helper-classes ),
-  'xxxlarge': (
-      'range': 160em 180em,
-      'columns': 12,
-      'grid-classes': $default-grid-list,
       'helper-classes': $helper-classes
-  )
+    ),
 ) !default;
 
 
@@ -88,25 +75,25 @@ $class-names: (
 
 
 @for $increment from 1 through $break-points {
-  $screen-size: nth($screen-keys,$increment);
-  $screen-values: map-get($screen-list,$screen-size);
-  $media-querie : media-querie($screen-size,"up");
+  $screen-size: nth($screen-keys, $increment);
+  $screen-values: map-get($screen-list, $screen-size);
+  $media-querie : media-querie($screen-size, "up");
   $screen-values : map-merge($screen-values, (media-querie-up: $media-querie));
   $screen-list : map-merge($screen-list, ($screen-size: $screen-values));
 }
 
 @for $increment from 1 through $break-points {
-  $screen-size: nth($screen-keys,$increment);
-  $screen-values: map-get($screen-list,$screen-size);
-  $media-querie : media-querie($screen-size,"only");
+  $screen-size: nth($screen-keys, $increment);
+  $screen-values: map-get($screen-list, $screen-size);
+  $media-querie : media-querie($screen-size, "only");
   $screen-values : map-merge($screen-values, (media-querie-only: $media-querie));
   $screen-list : map-merge($screen-list, ($screen-size: $screen-values));
 }
 
 @for $increment from 1 through $break-points {
-  $screen-size: nth($screen-keys,$increment);
-  $screen-values: map-get($screen-list,$screen-size);
-  $media-querie : media-querie($screen-size,"down");
+  $screen-size: nth($screen-keys, $increment);
+  $screen-values: map-get($screen-list, $screen-size);
+  $media-querie : media-querie($screen-size, "down");
   $screen-values : map-merge($screen-values, (media-querie-down: $media-querie));
   $screen-list : map-merge($screen-list, ($screen-size: $screen-values));
 }

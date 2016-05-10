@@ -53,8 +53,7 @@ gulp.task('sassdoc', function () {
     groups: {
       foo: 'Foo group',
       bar: 'Bar group',
-    },
-    theme: 'vulcan'
+    }
   };
   return gulp.src('src/*.scss')
     .pipe(sassdoc(options));
