@@ -1,7 +1,6 @@
 {
-  "private": true,
-  "title": "flexibleGrid",
-  "name": "flexible-grid",
+  "title": "xGrid",
+  "name": "x-grid",
   "engines": {
     "node": ">=0.12.0"
   },
@@ -44,5 +43,30 @@
         "single"
       ]
     }
-  }
+  },
+  "description": "Scalable grid. Source provides sass mixins to generate grids classes for different breakpoints.",
+  "version": "0.1.0",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudheerDev/xGrid.git"
+  },
+  "keywords": [
+    "grid",
+    "resposnive"
+  ],
+  "author": "sudheer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudheerDev/xGrid/issues"
+  },
+  "homepage": "https://github.com/sudheerDev/xGrid#readme"
 }
