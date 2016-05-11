@@ -73,7 +73,6 @@ $class-names: (
   ),
 );
 
-
 @for $increment from 1 through $break-points {
   $screen-size: nth($screen-keys, $increment);
   $screen-values: map-get($screen-list, $screen-size);
